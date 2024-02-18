@@ -2,7 +2,7 @@
 
 ## Add windows here. The format is Window Name|wmctrl coords
 # Run wmctrl -lG to list all currently open windows
-windows=("Visual Studio Code|0,18,1132,900,1330" "Brave|0,920,1122,1862,1410" "DevTools|0,2784,1132,642,1330")
+windows=("Visual Studio Code|0,18,1132,900,1330" "Brave|0,920,1122,1862,1410" "DevTools|0,2784,1132,642,1330" "Spotify|0,1256,20,857,1016")
 
 # Loop through windows array
 for window_info in "${windows[@]}"; do
