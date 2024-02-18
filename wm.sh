@@ -2,9 +2,9 @@
 
 ## Add windows here. The format is Window Name|wmctrl coords
 # Run wmctrl -lG to list all currently open windows
-windows=("Visual Studio Code|0,18,1132,900,1330" "Brave|0,920,1122,1862,1410" "DevTools|0,2784,1132,642,1330" "Spotify|0,1256,20,857,1016")
+windows=("Visual Studio Code|0,18,1132,900,1330" "Brave|0,920,1122,1862,1410" "DevTools|0,2784,1132,642,1330" "Spotify|0,1746,16,1016,928")
 
-# Loop through windows array
+# Loop through windsows array
 for window_info in "${windows[@]}"; do
     # Get the window name from the first column
     name=$(echo "$window_info" | awk -F '|' '{print $1}')
