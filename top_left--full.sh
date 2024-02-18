@@ -18,4 +18,7 @@ y_position=$(($gap_size - $decoration_offset))
 width=$((($window_width / 2) - $gap_size))
 height=$(($window_height - ($gap_size * 2)))
 # Use wmctrl to resize and move the window
+
+echo "Last Cordinates: ${x_position},${y_position},${height},${width}" > ~/scripts/windowManager/lastRun.txt
+
 wmctrl -i -r $active_window_id -e  0,$x_position,$y_position,$width,$height
